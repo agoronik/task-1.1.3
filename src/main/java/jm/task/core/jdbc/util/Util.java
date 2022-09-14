@@ -6,7 +6,7 @@ public class Util {
 
     public static final String URL = "jdbc:mysql://localhost:3306/task113";
     public static final String DB_USER = "admin";
-    public static final String DB_PASSW = "*****";
+    public static final String DB_PASSW = "***";
 
     public static Connection getConnection() {
         Connection connection = null;

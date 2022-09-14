@@ -15,13 +15,23 @@ public class Main {
 
 
     public static void main(String[] args) throws SQLException {
+
+        System.out.println("Create Table");
         userService.createUsersTable();
+
+        System.out.println("\nAdding Users");
         userService.saveUser(user1.getName(), user1.getLastName(), (byte) user1.getAge());
         userService.saveUser(user2.getName(), user2.getLastName(), (byte) user2.getAge());
         userService.saveUser(user3.getName(), user3.getLastName(), (byte) user3.getAge());
         userService.saveUser(user4.getName(), user4.getLastName(), (byte) user4.getAge());
+
+        System.out.println("\nGet AllUsers");
         userService.getAllUsers();
+
+        System.out.println("\nClean Table");
         userService.cleanUsersTable();
+
+        System.out.println("\nDrop Table");
         userService.dropUsersTable();
 
     }
